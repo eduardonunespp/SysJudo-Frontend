@@ -35,7 +35,7 @@ import { BackdropComponent } from "../../components/Backdrop";
 import { useModal } from "../../hooks/useModalProvider";
 import { useFormikProvider } from "../../hooks/useFormikProvider";
 
-import { CadastroAgremiacao } from "./CadastroAgremiacao";
+import { CadastroAgremiacao } from "./cadastro-atletas";
 import { Home } from "../Home";
 import { StyledButton as Button } from "../../components/Button";
 

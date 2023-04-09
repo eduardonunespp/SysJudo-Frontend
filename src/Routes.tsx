@@ -4,7 +4,7 @@ import { useRoutes, Navigate } from "react-router-dom";
 import { DashboardLayout } from "./layouts/DashboardLayout";
 
 import { Login } from "./pages/Login";
-import { Home } from "./pages/Agremiacao/Home";
+import { Home } from "./pages/Home";
 import { Listagem } from "./pages/Agremiacao/Listagem";
 import { CadastroAgremiacao } from "./pages/Agremiacao/CadastroAgremiacao";
 
