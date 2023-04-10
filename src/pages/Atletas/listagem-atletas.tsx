@@ -35,7 +35,7 @@ import { BackdropComponent } from "../../components/Backdrop";
 import { useModal } from "../../hooks/useModalProvider";
 import { useFormikProvider } from "../../hooks/useFormikProvider";
 
-import { CadastroAgremiacao } from "./cadastro-atletas";
+import { CadastroAtletas } from "./cadastro-atletas";
 import { Home } from "../Home";
 import { StyledButton as Button } from "../../components/Button";
 
@@ -47,7 +47,7 @@ import { parseISO, format } from 'date-fns';
 import { Loading } from '../../components/Loading/Loading';
 
 
-export function Listagem() {
+export function ListagemAtletas() {
   document.title = "Listagem de Agremiação";
   const navigate = useNavigate();
   const { handleClickOpen } = useModal();
@@ -493,7 +493,7 @@ export function Listagem() {
               {/* <BackdropComponent open={isLoading} /> */}
             </TabPanel>
             <TabPanel value={valueTab} index={1}>
-              <CadastroAgremiacao />
+              <CadastroAtletas />
             </TabPanel>
           </Grid>
         </Grid>

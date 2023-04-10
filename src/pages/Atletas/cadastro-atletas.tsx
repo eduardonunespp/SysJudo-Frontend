@@ -60,7 +60,7 @@ import LogoCorreios from "../../assets/correios.svg";
 import "../../styles/cadastro-agremiacao.scss";
 import { TabsAgremiacao } from "./Tabs";
 
-export function CadastroAgremiacao() {
+export function CadastroAtletas() {
   const navigate = useNavigate();
   const { id: userId } = useParams<{ id: string }>();
   const id = userId ? Number.parseInt(userId) : undefined;
@@ -1002,7 +1002,7 @@ export function CadastroAgremiacao() {
           onClick={(e) => {
             formik.handleReset(e);
             setAvatarPreview(AvatarDefault);
-            navigate("/agremiacao");
+            navigate("/atletas");
           }}
         >
           <ClearOutlinedIcon />
