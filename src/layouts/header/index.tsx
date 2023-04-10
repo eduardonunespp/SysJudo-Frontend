@@ -6,6 +6,9 @@ import { LogoutOutlined } from '@mui/icons-material';
 import { useAuthContext } from '../../hooks/useAuthProvider';
 
 import HeaderItemComponent from '../components';
+import { Link } from 'react-router-dom';
+
+import { useNavigate } from 'react-router-dom';
 
 const NAV_WIDTH = 280;
 
@@ -59,6 +62,7 @@ interface HeaderItemProps {
 }
 
 const HeaderItem = ({ title } : HeaderItemProps)  => {
+
   return (
     <>    
       <Divider orientation="vertical" flexItem color="#ccc" sx={{  maxHeight: '6.5vh',}} />
@@ -83,13 +87,20 @@ const HeaderItem = ({ title } : HeaderItemProps)  => {
 //{ onOpenNav }
 export function Header() {
   const { logout } = useAuthContext();
+
+  const navigate = useNavigate()
+
   return (
     <StyledRoot>
       <StyledToolbar>
 
       <HeaderItemComponent title='Cadastros' >
-        <button>Agremiação</button>
-        <button>Atletas</button>
+        
+        <button onClick={ () => navigate('/agremiacao') }>Agremiação</button>
+        
+        
+        <button onClick={ () => navigate('/atletas') } >Atletas</button>
+      
       </HeaderItemComponent>
 
       <HeaderItemComponent title='Finanças'>
