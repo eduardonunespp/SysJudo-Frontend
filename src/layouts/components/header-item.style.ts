@@ -43,6 +43,7 @@ export const ButtonComponent = styled.button`
       border-bottom: 1px solid #b3b3b3;
       transition: 0.2s;
       cursor: pointer;
+      text-decoration: none;
 
       &:hover {
         filter: brightness(0.9);
