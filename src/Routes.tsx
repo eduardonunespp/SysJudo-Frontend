@@ -6,7 +6,10 @@ import { DashboardLayout } from "./layouts/DashboardLayout";
 import { Login } from "./pages/Login";
 import { Home } from "./pages/Home";
 import { Listagem } from "./pages/Agremiacao/Listagem";
+import { ListagemAtletas } from "./pages/Atletas/listagem-atletas";
 import { CadastroAgremiacao } from "./pages/Agremiacao/CadastroAgremiacao";
+import { CadastroAtletas } from "./pages/Atletas/cadastro-atletas";
+
 
 import { useAuthContext } from "./hooks/useAuthProvider";
 import { ModalFilterAgremiacao } from "./components/Modal/Agremiacao/modalFilterAgremiacao";
@@ -34,7 +37,9 @@ export default function Router() {
         { path: "/", element: <Home /> },
         { path: "/agremiacao", element: <Listagem /> },
         { path: "/agremiacao/cadastro", element: <CadastroAgremiacao /> },
-        { path: "/agremiacao/editar/:id", element: <CadastroAgremiacao /> }
+        { path: "/agremiacao/editar/:id", element: <CadastroAgremiacao /> },
+        { path: "/atletas", element: <ListagemAtletas /> },
+        { path: "/atletas/cadastro", element: <CadastroAtletas /> }
       ],
     },
     { path: "/login", element: <Login /> },
